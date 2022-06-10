@@ -4,42 +4,65 @@
 
 /* Box Model Hack */
 *{
+  font-size: 62.5%;
   box-sizing: border-box;
+  margin: 0;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-body {
-  height: 100%;
-}
-h1, h2{
-  text-align: center;
-}
-img{
-  display: block;
-  height: 300px;
-  margin: 0 auto;
+
+.calculator {
+  /* position: absolute; */
+  max-width: 400px;
+  /* top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%); 
+  width: 400px; */
+  margin: auto;
+  padding: 40px;
+  padding-top: 70px;
+  margin-top: 250px;
+  background-color: black;
+  border: 2px solid red;
+  border-radius: 20px;
 }
 
-.buttons {
-  display: grid;
+ .screen {
+  width: 100%;
+  height: 70px;
+  font-size: 5rem;
+  text-align: right;
+  background: white;
+  color: black;
+  border: 2px solid green;
+  padding-right: 12px;
+}
 
-  grid-template-columns: repeat(4, 1fr);
+.calc-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 2px solid purple;
+  padding: 12px;
+} 
+
+button {
+  height: 60px;
+  background: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+  margin: 7px;
+  padding: 5px;
+  flex: 1 0 18%;
 }
-ul{
-  width: 100px;
-  height: 100%;
-  border: 3px solid black;
-  margin: 0 auto;
-  list-style: none;
-  padding: 0;
-}
-li{
-  text-align: center;
-  width: 94px;
-  height: 49px;
-  border: 1px solid black;
+
+.all-clear {
+  font-size: 3.5rem;
 }
 
 /******************************************
