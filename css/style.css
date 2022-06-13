@@ -7,6 +7,7 @@
   font-size: 62.5%;
   box-sizing: border-box;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /******************************************
@@ -25,7 +26,6 @@
   padding-top: 70px;
   margin-top: 250px;
   background-color: black;
-  border: 2px solid red;
   border-radius: 20px;
 }
 
@@ -36,7 +36,6 @@
   text-align: right;
   background: white;
   color: black;
-  border: 2px solid green;
   padding-right: 12px;
 }
 
@@ -44,13 +43,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 2px solid purple;
   padding: 12px;
 } 
 
 button {
   height: 60px;
-  background: white;
+  background: rgb(189, 188, 188);
   border: none;
   border-radius: 30px;
   font-size: 4rem;
@@ -59,10 +57,16 @@ button {
   margin: 7px;
   padding: 5px;
   flex: 1 0 18%;
+  cursor: pointer;
 }
 
 .all-clear {
   font-size: 3.5rem;
+  background-color: orange;
+}
+
+button:hover {
+  background-color: white;
 }
 
 /******************************************
