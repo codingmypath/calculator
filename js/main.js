@@ -6,3 +6,4 @@ let total = 0
 // document.querySelector('#three').addEventListener('click', sub2)
 
 
+let doc = document.querySelector('.calc-buttons')
